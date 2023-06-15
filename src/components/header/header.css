@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 3;
+    background-color: #161616;
+    max-width: 1200px;
+    transition: 0.7s linear;
+    box-shadow: 0 0 15px #110d0d;
+    padding: 0 25px;
+}
+
+.header__scroll{
+    z-index: 3;
+    height: 120px;
+    width: 100%;
+}
+
+
+
+.header__logo{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: "Raleway";
+}
+.header__logo a{
+    color: #fbbe01;
+}
+.katalog-icon-close,
+.katalog-icon{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.header__katalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border: 2px solid #fbbe01;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fbbe01;
+}
+.header__katalog:active{
+    color: red;
+    border: 2px solid red;
+}
+
+
+
+.header__search{
+    display: flex;
+    align-items: center;
+}
+.katalog-icon-search{
+    position: relative;
+    left: 45px;
+    color: #fbbe01;
+}
+
+.header__search input{
+    width: 500px;
+    outline: none;
+    border: none;
+    background: #2e2c2c;
+    padding: 15px 15px 15px 45px;
+    border-radius: 15px;
+    color: #fbbe01;
+    font-size: 18px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    color: #fbbe01;
+}
+.katalog a{
+    font-size: 18px;
+    color: #fbbe01;
+    
+}
+.katalog{
+    height: 300px;
+    position: fixed;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #110d0d;
+    transition: 0.7s linear;
+    top: -100%;
+    box-shadow: 0 0 10px #110d0d;
+}
+.katalog__items{
+    padding: 5px;
+}
+.menu__active{
+    top: 50px;
+}
+.menu__active a{
+    transform: translateY(25px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    width: 150px;
+}
+.header__heart, .header__savatcha, .header__kirish{
+    cursor: pointer;
+}
+.header__heart:active,.header__savatcha:active,.header__kirish:active{
+    color: red;
+}

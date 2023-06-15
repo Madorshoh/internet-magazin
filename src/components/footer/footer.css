@@ -1,0 +1,27 @@
+.footer__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #161616;
+}
+
+.footer__logo{
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Raleway";
+}
+.footer__logo a{
+    color: #fbbe01;
+}
+.footer__info{
+    color: white;
+}
+.footer__info h2{
+    margin-bottom: 15px;
+}
+.footer__info span{
+    color: #fbbe01;
+}
