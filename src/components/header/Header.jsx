@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Form, Link } from 'react-router-dom'
 import{BiMenu,BiSearchAlt} from 'react-icons/Bi'
 import {AiOutlineClose, AiOutlineHeart, AiOutlineUserAdd} from "react-icons/ai"
 import { SlBasket } from 'react-icons/sl'
@@ -44,24 +44,32 @@ const Header = () => {
 
                 <div className="header__search">
                   <BiSearchAlt className='katalog-icon katalog-icon-search'/>
-                  <input 
-                    type="search" placeholder='Qidirish...' 
-                    onChange={(e)=>x.setWord(e.target.value)}
-                  />
+                 
+                    <input 
+                      type="search" placeholder='Qidirish...' 
+                      onChange={(e)=>x.setWord(e.target.value)}
+                    />
+                  
                 </div>
 
                 <div className="navbar">
-                  <div className="header__heart">
-                    <AiOutlineHeart/>
+                  <Link to={"/sevimli"}>
+                  <div className="header__heart" style={{fontSize:14,textAlign:'center'}}>
+                    <AiOutlineHeart/><br /><span>Sevimlilar</span>
                   </div>
+                  </Link>
 
-                  <div className="header__savatcha">
-                    <SlBasket/>
-                  </div>
+                 <Link to={"/savatcha"}>
+                  <div className="header__savatcha" style={{fontSize:14,textAlign:'center'}}>
+                      <SlBasket/><br /><span>Savatcha</span>
+                    </div>
+                 </Link>
 
-                  <div className="header__kirish">
-                    <AiOutlineUserAdd/>
-                  </div>
+                  <Link to={"/login"}>
+                    <div className="header__kirish" style={{fontSize:14,textAlign:'center'}}>
+                      <AiOutlineUserAdd/> <br /> <span>Kirish</span>
+                    </div>
+                  </Link>
                 </div>
             </div>
 

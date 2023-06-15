@@ -115,7 +115,8 @@
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    width: 150px;
+    width: 200px;
+    text-align: center;
 }
 .header__heart, .header__savatcha, .header__kirish{
     cursor: pointer;
