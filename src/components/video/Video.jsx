@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from 'react'
+import VideoHome from '../../assets/homeviddeo.mp4'
 import './video.css'
-    class Content extends Component {
-      render() {
-        return (
-              <div className="video__container">
-                  <video src="https://olcha.uz/image/original/homePage/kqbE6s0rjwXwyVPOmEFZ34fCDGwbnYb3egpq331hpupeSYeq7BlyeBBLpJ97.mp4" autoPlay={Infinity}/>
-              </div>
-        );
-      }
-    }
 
-export default Content;
+const Video = () => {
+  return (
+    <div className='video__container'>
+      <video src={VideoHome} autoPlay loop muted className='home__video'/>
+    </div>
+  )
+}
+
+export default Video

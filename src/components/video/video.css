@@ -1,7 +1,7 @@
 .video__container{
     padding: 15px 30px;
 }
-.video__container video{
+.home__video{
     width: 100%;
     margin: 0 auto;
     border-radius: 15px;
