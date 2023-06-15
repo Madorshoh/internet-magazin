@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import{BiMenu,BiSearchAlt} from 'react-icons/Bi'
+import{BiMenu,BiSearchAlt} from 'react-icons/bi'
 import {AiOutlineClose, AiOutlineHeart, AiOutlineUserAdd} from "react-icons/ai"
 import { SlBasket } from 'react-icons/sl'
 import { useState } from 'react'
